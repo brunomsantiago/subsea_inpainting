@@ -12,7 +12,7 @@ Most of these videos are have an "burned overlay", showing real time metadata li
 <p align="center">
 <br>
   <img src="https://github.com/brunomsantiago/subsea_inpainting/raw/main/images/typical_subsea_frame.png">
-  <figcaption>Typical Subsea Frame</figcaption>
+  <br><b>Typical Subsea Frame</b>
 </p>
 
 This work is an experiment to see if current State of Art inpainting techniques are ready to remove overlays from subsea inspection videos. The techniques were tested "as is", without any fine tuning for subsea inspection context.
