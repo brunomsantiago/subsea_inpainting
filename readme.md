@@ -15,7 +15,7 @@ Most of these videos are have an "burned overlay", showing real time metadata li
   <br><b>Figure 1 - Typical Subsea Frame with overlay metadata</b>
 </p>
 
-This work is an experiment to see if current State of Art inpainting techniques are ready to remove overlays from subsea inspection videos. The techniques were tested "as is", without any fine tuning for subsea inspection context.
+This work is an experiment to see if current State of Art inpainting techniques are ready to remove overlays from subsea inspection videos. The techniques were tested "as is" (without any fine tuning for subsea inspection) and the results were evaluated visually.
 
 
 ## 2. The Dataset
