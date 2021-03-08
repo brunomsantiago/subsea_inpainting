@@ -1,5 +1,5 @@
 # Subsea Inpainting
-### Removing overlays from subsea inspection videos using image/video inpainting
+### Removing overlays from subsea inspection videos using image/video inpainting <br><br>
 
 
 ## 1. Introduction
