@@ -42,6 +42,11 @@ For download and more details about the folder structure of the dataset see [Sub
 
 #### 3.1 OpenCV
 
+The first technique tested was OpenCV Navier-Stokes Image Inpainting (see [OpenCV tutorial](https://docs.opencv.org/master/df/d3d/tutorial_py_inpainting.html)) which is based on a paper from 2001.
+It is a classic computer vision method, applied to individually to frames.
+
+I didn't have great expectations about this technique, but included it in the analysis as baseline. Both in quality and processing time.
+
 #### 3.2. Deepfill v1
 
 #### 3.3. Hifill
