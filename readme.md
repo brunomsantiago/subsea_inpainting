@@ -7,7 +7,7 @@
 Oil and Gas industry generates thousands of hours of subsea inspection videos per day. The Oil and Gas operators also have millions of hours of archived video. <br>
 These underwater videos are usually acquired by Remote Operated Vehicles (ROVs) and are crucial to the integrity management strategy of subsea assets, like pipelines and Wet Christmas Trees (WCTs), allowing Oil and Gas companies to operate their offshore fields safely. <br>
 
-Most of these videos are have an "burned overlay", showing real time metadata like ROV coordinates, water depth and heading. On one hand the burned overlay guarantees the metadata is close to the image data even after operations like individual frame extraction and video trim. On the other hand, the overlay may obstruct important image data from users or confuse image processing algorithms. <br>
+Most of these videos have an "burned overlay", showing real time metadata like ROV coordinates, water depth and heading. On one hand the burned overlay guarantees the metadata is close to the image data even after operations like individual frame extraction and video trim. On the other hand, the overlay may obstruct important image data from users or confuse image processing algorithms. <br>
 
 <p align="center">
 <br>
