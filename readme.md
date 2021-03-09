@@ -20,12 +20,17 @@ This work is an experiment to see if current State of Art inpainting techniques 
 
 ## 2. The Dataset
 
-The dataset started by watching and downloading youtube videos of subsea operations, mostly subsea inspections.<br>
-Initially I watched more than fifty videos and downloaded forty-three for further analysis. In the end I selected five that were most similar to private videos I have seen on my work experience at Oil and Gas industry, however not exactly similar.<br>
-From these five videos I extracted thirteen small clips. Each clip has between 15 and 80 frames. The clips are so short because one of the inpainting techniques tested, without modifications, is not able to process long sequences, running out of memory.<br>
-I also created masks covering the overlay. These masks are black and white PNG images, white meaning inpaint here and black meaning keep the original content.<br>
-Both the clips and masks are provided as individual PNG images with the same name in different folders. 
-For download and more details regarding the dataset strucuture see [Subsea Inpainting Dataset at Kaggle Datasets](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset).
+The dataset is composed of 13 small clips of subsea operations that were extracted from 5 videos. It also contains masks covering the overlay for each clip.
+
+Each clip has between 15 and 80 frames. The clips are this short because one of the inpainting techniques tested, without modifications, is not able to process long sequences, running out of memory.
+
+Both the clips and masks are provided as individual PNG images with the same name in different folders.
+
+ The masks are black and white PNG images. White means inpaint here and black means keep the original content.
+
+The dataset was created by watching and downloading lots of youtube videos of subsea operations, mostly subsea inspections. Initially 43 videos were selected for further analysis and in the end only 5 was kept. These 5 videos are most similar to private videos I have seen on my work experience at Oil and Gas industry, however not exactly similar.
+
+For download and more details about the folder structure of the dataset see [Subsea Inpainting Dataset at Kaggle Datasets](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset).
 
 ## 3. Inpainting techniques tested
 
