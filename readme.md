@@ -31,7 +31,7 @@ Both the clips and masks are provided as individual PNG images with the same nam
  <p align="center">
  <br>
    <img src="https://github.com/brunomsantiago/subsea_inpainting/raw/main/images/frame_plus_mask.png">
-   <br><b>Figure 2 - A frame, its mask and the mask applied on the frame.</b>
+   <br><b>Figure 2 - A frame, its mask and the mask applied on the frame</b>
  </p>
 
 The dataset was created by watching and downloading lots of youtube videos of subsea operations, mostly subsea inspections. Initially 43 videos were selected for further analysis and in the end only 5 was kept. These 5 videos are most similar to private videos I have seen on my work experience at Oil and Gas industry, however not exactly similar.
