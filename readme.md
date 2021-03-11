@@ -44,15 +44,9 @@ For download and more details about the folder structure of the dataset see [Sub
 
 #### 3.1 OpenCV
 
-The first technique tested was OpenCV Navier-Stokes Image Inpainting (see [OpenCV inpainting tutorial](https://docs.opencv.org/master/df/d3d/tutorial_py_inpainting.html)) which is based on a [paper from 2001](https://ieeexplore.ieee.org/document/990497).
+The first technique tested was OpenCV Navier-Stokes Image Inpainting (see [OpenCV inpainting tutorial](https://docs.opencv.org/master/df/d3d/tutorial_py_inpainting.html)) which is based on a [paper from 2001](https://ieeexplore.ieee.org/document/990497). It is a classic computer vision method, applied to individually to frames without data propagation from nearby frames. This kind of technique have better results removing small defects, thin defects and larger defects on regular backgrounds.
 
-It is a classic computer vision method, applied to individually to frames without data propagation from nearby frames.
-
-This kind of technique have better results removing small defects, thin defects and larger defects on regular backgrounds.
-
-I didn't have great expectations about this technique for removing overlay from subsea videos, but included it in the analysis as baseline.
-
-This baseline is useful both for inpainting results and processing time. More advanced techniques must have inpainting results that look much better.  Techniques ready for production should look for processing times as close a possible as opencv technique.
+I didn't have great expectations about this technique for removing overlay from subsea videos, but included it in the analysis as baseline. This baseline is useful both for inpainting results and processing time. More advanced techniques must have inpainting results that look much better.  Techniques ready for production should look for processing times as close a possible as opencv technique.
 
 #### 3.2. Deepfill v1
 
