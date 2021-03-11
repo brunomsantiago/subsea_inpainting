@@ -22,13 +22,9 @@ As an intermediate step two other contributions were made. A [Subsea Inpainting 
 
 ## 2. The Dataset
 
-The dataset is composed of 13 small clips of subsea operations that were extracted from 5 videos. It also contains masks covering the overlay for each clip.
+The dataset is composed of 13 small clips of subsea operations that were extracted from 5 videos. It also contains masks covering the overlay for each clip. Each clip has between 15 and 80 frames. The clips are this short because one of the inpainting techniques tested, without modifications, is not able to process long sequences, running out of memory.
 
-Each clip has between 15 and 80 frames. The clips are this short because one of the inpainting techniques tested, without modifications, is not able to process long sequences, running out of memory.
-
-Both the clips and masks are provided as individual PNG images with the same name in different folders.
-
- The masks are black and white PNG images. White means inpaint here and black means keep the original content.
+Both the clips and masks are provided as individual PNG images with the same name in different folders. The masks are black and white images. White means inpaint here and black means keep the original content.
 
  <p align="center">
  <br>
