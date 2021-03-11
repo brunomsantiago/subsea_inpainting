@@ -1,3 +1,8 @@
+# Original file:
+# https://github.com/Atlas200dk/sample-imageinpainting-HiFill/blob/master/GPU_CPU/test.py
+# I only renamed the file from test.py to hifill.py and removed code to allow
+# importing functions
+
 import cv2
 import numpy as np
 
