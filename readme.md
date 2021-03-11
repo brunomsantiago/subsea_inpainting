@@ -58,12 +58,16 @@ Although Deepfill v1 and v2 have their official implementations on github, I did
 
 #### 3.1.3. Hifill
 
-Hifill ([paper](https://arxiv.org/abs/2005.09704), [code](https://github.com/Atlas200dk/sample-imageinpainting-HiFill), [video](https://youtu.be/Q7mX5Bstv7U)) is a inpainting technique similar to Deepfill, which is designed to work better on high resolution images, with larger roles and easier to adapt for new contexts (with few images)
+Hifill ([paper](https://arxiv.org/abs/2005.09704), [code](https://github.com/Atlas200dk/sample-imageinpainting-HiFill), [video](https://youtu.be/Q7mX5Bstv7U)) is a inpainting technique similar to Deepfill, which is designed to work better on high resolution images, with larger roles and easier to adapt for new contexts (with few images). From the abstract:
+
+> ... a Contextual Residual Aggregation (CRA) mechanism that can produce high-frequency residuals for missing contents by weighted aggregating residuals from contextual patches, thus only requiring a low-resolution prediction from the network. Since convolutional layers of the neural network only need to operate on low-resolution inputs and outputs, the cost of memory and computing power is thus well suppressed. Moreover, the need for high-resolution training datasets is alleviated. In our experiments, we train the proposed model on small images with resolutions 512x512 and perform inference on high-resolution images, achieving compelling inpainting quality. Our model can inpaint images as large as 8K with considerable hole sizes, which is intractable with previous learning-based approaches.
 
 ### 3.2. Frame propagation techniques
 
 #### 3.2.1. FGVC
 
-## 4. Results
+## 4. Testing Code
 
-## 5. Discussion
+## 5. Results
+
+## 6. Discussion
