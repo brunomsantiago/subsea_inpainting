@@ -38,17 +38,29 @@ For download and more details about the folder structure of the dataset see [Sub
 
 ## 3. Inpainting techniques tested
 
-#### 3.1 OpenCV
+### 3.1. Frame by frame techniques
 
-The first technique tested was OpenCV Navier-Stokes Image Inpainting (see [OpenCV inpainting tutorial](https://docs.opencv.org/master/df/d3d/tutorial_py_inpainting.html)) which is based on a [paper from 2001](https://ieeexplore.ieee.org/document/990497). It is a classic computer vision method, applied to individually to frames without data propagation from nearby frames. This kind of technique have better results removing small defects, thin defects and larger defects on regular backgrounds.
+These techniques are designed to used on individual images. When used on videos they are applied frames by frame, without any data propagation from nearby frames, which may lead to inconsistencies between them.
+
+#### 3.1.1. OpenCV
+
+The first technique tested was OpenCV Navier-Stokes Image Inpainting (see [OpenCV inpainting tutorial](https://docs.opencv.org/master/df/d3d/tutorial_py_inpainting.html)) which is based on a [paper from 2001](https://ieeexplore.ieee.org/document/990497). It is a classic computer vision method, which have better results removing small defects, thin defects or larger defects on regular backgrounds.
 
 I didn't have great expectations about this technique for removing overlay from subsea videos, but included it in the analysis as baseline. This baseline is useful both for inpainting results and processing time. More advanced techniques must have inpainting results that look much better.  Techniques ready for production should look for processing times as close a possible as opencv technique.
 
-#### 3.2. Deepfill v1
+#### 3.1.2. Deepfill v1
 
-#### 3.3. Hifill
+Deepfill ([v1 paper](https://arxiv.org/abs/1801.07892), [v1 repo](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0), [v2 paper](https://arxiv.org/abs/1806.03589), [v2 repo](https://github.com/JiahuiYu/generative_inpainting/tree/v2.0.0)) is inpainting technique based on deep neural networs. From Deepfill v1 paper abstract:
 
-#### 3.4. FGVC
+> "... a new deep generative model-based approach which can not only synthesize novel image structures but also explicitly utilize surrounding image features as references during network training to make better predictions. The model is a feed-forward, fully convolutional neural network which can process images with multiple holes at arbitrary locations and with variable sizes during the test time"
+
+Although Deepfill v1 and v2 have their official implementations on github, I didn't used them. I used v1 implementation from [FGVC repo](https://github.com/vt-vl-lab/FGVC) (see more details below) which got it from DFVI ([repo](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting), [paper](https://arxiv.org/abs/1905.02884), [video](https://youtu.be/LIJPUsrwx5E)), as both of these techniques uses Deepfill v1 as part of their processing pipeline. According to [DFVI paper](https://arxiv.org/abs/1905.02884) this implementation of Deepfill v1 was trained on [Davis dataset](https://davischallenge.org/). On [Deep v1 official repo](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0) there are pre-trained models based on CelebA-HQ, Places2, CelebA and ImageNet Datasets, but not Davis Dataset.
+
+#### 3.1.3. Hifill
+
+### 3.2. Frame propagation techniques
+
+#### 3.2.1. FGVC
 
 ## 4. Results
 
