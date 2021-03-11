@@ -50,11 +50,11 @@ I didn't have great expectations about this technique for removing overlay from 
 
 #### 3.1.2. Deepfill v1
 
-Deepfill ([v1 paper](https://arxiv.org/abs/1801.07892), [v1 repo](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0), [v2 paper](https://arxiv.org/abs/1806.03589), [v2 repo](https://github.com/JiahuiYu/generative_inpainting/tree/v2.0.0)) is inpainting technique based on deep neural networs. From Deepfill v1 paper abstract:
+Deepfill ([v1 paper](https://arxiv.org/abs/1801.07892), [v1 repo](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0), [v2 paper](https://arxiv.org/abs/1806.03589), [v2 repo](https://github.com/JiahuiYu/generative_inpainting/tree/v2.0.0)) is inpainting technique based on deep neural networks. From Deepfill v1 paper abstract:
 
 > "... a new deep generative model-based approach which can not only synthesize novel image structures but also explicitly utilize surrounding image features as references during network training to make better predictions. The model is a feed-forward, fully convolutional neural network which can process images with multiple holes at arbitrary locations and with variable sizes during the test time"
 
-Although Deepfill v1 and v2 have their official implementations on github, I didn't used them. I used v1 implementation from [FGVC repo](https://github.com/vt-vl-lab/FGVC) (see more details below) which got it from DFVI (a technique I didn't tested), as both of these techniques uses Deepfill v1 as part of their processing pipeline. According to [DFVI paper](https://arxiv.org/abs/1905.02884) this implementation of Deepfill v1 was trained on Davis dataset. On Deep v1 official repo there are pre-trained models based on CelebA-HQ, Places2, CelebA and ImageNet Datasets, but not Davis Dataset.
+Although Deepfill v1 and v2 have their official implementations on github, I didn't used them. I used v1 implementation from [FGVC repo](https://github.com/vt-vl-lab/FGVC) (see more details below), which uses Deepfill v1 as part of its processing pipeline.
 
 #### 3.1.3. Hifill
 
