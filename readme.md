@@ -58,6 +58,8 @@ Although Deepfill v1 and v2 have their official implementations on github, I did
 
 #### 3.1.3. Hifill
 
+Hifill ([paper](https://arxiv.org/abs/2005.09704), [code](https://github.com/Atlas200dk/sample-imageinpainting-HiFill), [video](https://youtu.be/Q7mX5Bstv7U)) is a inpainting technique similar to Deepfill, which is designed to work better on high resolution images, with larger roles and easier to adapt for new contexts (with few images)
+
 ### 3.2. Frame propagation techniques
 
 #### 3.2.1. FGVC
