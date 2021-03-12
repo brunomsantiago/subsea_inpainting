@@ -50,7 +50,7 @@ I didn't have great expectations about this technique for removing overlay from 
 
 #### 3.1.2. Deepfill v1
 
-Deepfill v1 ([paper](https://arxiv.org/abs/1801.07892), [code](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0), [video](https://youtu.be/xz1ZvcdhgQ0)) and v2 ([paper](https://arxiv.org/abs/1806.03589), [code](https://github.com/JiahuiYu/generative_inpainting/tree/v2.0.0), [video](https://youtu.be/uZkEi9Y2dj4)) are inpainting techniques based on deep neural networks. From Deepfill v1 paper abstract:
+Deepfill v1 ([paper](https://arxiv.org/abs/1801.07892), [code](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0), [video](https://youtu.be/xz1ZvcdhgQ0)) and v2 ([paper](https://arxiv.org/abs/1806.03589), [code](https://github.com/JiahuiYu/generative_inpainting/tree/v2.0.0), [video](https://youtu.be/uZkEi9Y2dj4)) are image inpainting techniques based on deep neural networks. From Deepfill v1 paper abstract:
 
 > "... a new deep generative model-based approach which can not only synthesize novel image structures but also explicitly utilize surrounding image features as references during network training to make better predictions. The model is a feed-forward, fully convolutional neural network which can process images with multiple holes at arbitrary locations and with variable sizes during the test time"
 
@@ -58,13 +58,19 @@ Although Deepfill v1 and v2 have their official implementations on github, I did
 
 #### 3.1.3. Hifill
 
-Hifill ([paper](https://arxiv.org/abs/2005.09704), [code](https://github.com/Atlas200dk/sample-imageinpainting-HiFill), [video](https://youtu.be/Q7mX5Bstv7U)) is a inpainting technique similar to Deepfill, which is designed to work better on high resolution images, with larger roles and easier to adapt for new contexts (with few images). From the abstract:
+Hifill ([paper](https://arxiv.org/abs/2005.09704), [code](https://github.com/Atlas200dk/sample-imageinpainting-HiFill), [video](https://youtu.be/Q7mX5Bstv7U)) is a image inpainting technique similar to Deepfill, which is designed to work better on high resolution images, with larger roles and easier to adapt for new contexts (with few images). From the abstract:
 
 > ... a Contextual Residual Aggregation (CRA) mechanism that can produce high-frequency residuals for missing contents by weighted aggregating residuals from contextual patches, thus only requiring a low-resolution prediction from the network. Since convolutional layers of the neural network only need to operate on low-resolution inputs and outputs, the cost of memory and computing power is thus well suppressed. Moreover, the need for high-resolution training datasets is alleviated. In our experiments, we train the proposed model on small images with resolutions 512x512 and perform inference on high-resolution images, achieving compelling inpainting quality. Our model can inpaint images as large as 8K with considerable hole sizes, which is intractable with previous learning-based approaches.
 
 ### 3.2. Frame propagation techniques
 
+This kind o technique is designed to used on videos and differ from image techniques it two points. First it uses data from nearby other frames to complete the frame being inpainted, as the camera or object movement can make the data missing from one frame available in the other. Second it actively try to achieve temporal consistency, inpainting nearby frames in a similar manner.
+
 #### 3.2.1. FGVC
+
+FGVC ([paper](https://arxiv.org/abs/2009.01835), [code](https://github.com/vt-vl-lab/FGVC), [video](https://youtu.be/CHHVPxHT7rc)) is a video inpainting technique with a interest pipeline. First it estimates flow, complete its edges to create a smoothed completed flow. Then it uses this new flow to guide a search for missing pixels from the current frame in other frames. Next it completes still missing pixels using a image inpainting technique. Finally it blends all frames together in a seamless way. In addition this whole process is done forward and backward, and is also iterative.
+
+FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, currently RAFT), other to complete edges on the optical flow, and another to complete missing pixels (Deepfill v1). Even though the GPU intensive neural networks are important parts of the pipeline, most of processing time seems to be used looking for missing pixels and blending frames, which are CPU intensive operations.
 
 ## 4. Testing Code
 
