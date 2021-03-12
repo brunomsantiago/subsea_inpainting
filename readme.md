@@ -34,7 +34,7 @@ Both the clips and masks are provided as individual PNG images with the same nam
 
 The dataset was created by watching and downloading lots of youtube videos of subsea operations, mostly subsea inspections. Initially 43 videos were selected for further analysis and in the end only 5 was kept. These 5 videos are most similar to private videos I have seen on my work experience at Oil and Gas industry, however not exactly similar.
 
-For download and more details about the folder structure of the dataset see [Subsea Inpainting Dataset at Kaggle Datasets](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset).
+For download and more details about the folder structure of the dataset see [Subsea Inpainting Dataset at Kaggle Datasets](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset). As alternative mirror you can download from [google drive](https://drive.google.com/file/d/1sTC4ELGfw1BMeHkhDVB8Kv3yHn-GJWVv/view?usp=sharing) as single zip, which is speacially useful if you need to copy the dataset to your own google drive and run the colab notebooks in section 4.
 
 ## 3. Inpainting techniques tested
 
