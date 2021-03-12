@@ -38,7 +38,7 @@ For download and more details about the folder structure of the dataset see [Sub
 
 ## 3. Inpainting techniques tested
 
-### 3.1. Frame by frame techniques
+### 3.1. Individual image techniques (frame by frame)
 
 These techniques are designed to used on individual images. When used on videos they are applied frames by frame, without any data propagation from nearby frames, which may lead to inconsistencies between them.
 
@@ -62,9 +62,9 @@ Hifill ([paper](https://arxiv.org/abs/2005.09704), [code](https://github.com/Atl
 
 > ... a Contextual Residual Aggregation (CRA) mechanism that can produce high-frequency residuals for missing contents by weighted aggregating residuals from contextual patches, thus only requiring a low-resolution prediction from the network. Since convolutional layers of the neural network only need to operate on low-resolution inputs and outputs, the cost of memory and computing power is thus well suppressed. Moreover, the need for high-resolution training datasets is alleviated. In our experiments, we train the proposed model on small images with resolutions 512x512 and perform inference on high-resolution images, achieving compelling inpainting quality. Our model can inpaint images as large as 8K with considerable hole sizes, which is intractable with previous learning-based approaches.
 
-### 3.2. Frame propagation techniques
+### 3.2. Video techniques (frame propagation)
 
-This kind o technique is designed to used on videos and differ from image techniques it two points. First it uses data from nearby other frames to complete the frame being inpainted, as the camera or object movement can make the data missing from one frame available in the other. Second it actively try to achieve temporal consistency, inpainting nearby frames in a similar manner.
+Video inpainting techniques differ from image techniques in two points. First it uses data from nearby frames to complete the current frame, as the camera or object movement may cause the data missing from one frame to be available in the others. Second it actively try to achieve temporal consistency, inpainting nearby frames in a similar manner.
 
 #### 3.2.1. FGVC
 
