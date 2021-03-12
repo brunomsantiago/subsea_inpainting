@@ -50,7 +50,7 @@ I didn't have great expectations about this technique for removing overlay from 
 
 #### 3.1.2. Deepfill v1
 
-Deepfill ([v1 paper](https://arxiv.org/abs/1801.07892), [v1 code](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0), [v2 paper](https://arxiv.org/abs/1806.03589), [v2 code](https://github.com/JiahuiYu/generative_inpainting/tree/v2.0.0)) is inpainting technique based on deep neural networks. From Deepfill v1 paper abstract:
+Deepfill v1 ([paper](https://arxiv.org/abs/1801.07892), [code](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0), [video](https://youtu.be/xz1ZvcdhgQ0)) and v2 ([paper](https://arxiv.org/abs/1806.03589), [code](https://github.com/JiahuiYu/generative_inpainting/tree/v2.0.0), [video](https://youtu.be/uZkEi9Y2dj4)) are inpainting techniques based on deep neural networks. From Deepfill v1 paper abstract:
 
 > "... a new deep generative model-based approach which can not only synthesize novel image structures but also explicitly utilize surrounding image features as references during network training to make better predictions. The model is a feed-forward, fully convolutional neural network which can process images with multiple holes at arbitrary locations and with variable sizes during the test time"
 
