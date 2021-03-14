@@ -86,19 +86,19 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 
 | Clip                                                               | FGVC         | Hifill       | Deepfill | Opencv |
 | :-:                                                                | :-:          | :-:          | :-:      | :-:    |
-| 01a <br> <sub>([4x4 grid](https://imgur.com/a/v2mNWF8/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
-| 01b <br> <sub>([4x4 grid](https://imgur.com/a/1jsc1ph/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
-| 01c <br> <sub>([4x4 grid](https://imgur.com/a/hwFFKAL/all))</sub> | Excellent    | Good         | Poor     | Poor   |
-| 02a <br> <sub>([4x4 grid](https://imgur.com/a/EfOiKEx/all))</sub> | Fair         | Poor         | Good     | Poor   |
-| 03a <br> <sub>([4x4 grid](https://imgur.com/a/ZioikGt/all))</sub> | Poor -> Good | Good -> Fair | Poor     | Poor   |
-| 03b <br> <sub>([4x4 grid](https://imgur.com/a/SQGQl4r/all))</sub> | Good         | Poor         | Fair     | Poor   |
-| 04a <br> <sub>([4x4 grid](https://imgur.com/a/qwISx6l/all))</sub> | Excellent    | Fair         | Good     | Poor   |
-| 05a <br> <sub>([4x4 grid](https://imgur.com/a/57B1Gex/all))</sub> | Poor         | Poor         | Good     | Fair   |
-| 05b <br> <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> |      |        |          |        |
-| 05c <br> <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> |      |        |          |        |
-| 05d <br> <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> |      |        |          |        |
-| 05e <br> <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> |      |        |          |        |
-| 05f <br> <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> |      |        |          |        |
+| **01a** <br> <sub>([4x4 grid](https://imgur.com/a/v2mNWF8/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
+| **01b** <br> <sub>([4x4 grid](https://imgur.com/a/1jsc1ph/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
+| **01c** <br> <sub>([4x4 grid](https://imgur.com/a/hwFFKAL/all))</sub> | Excellent    | Good         | Poor     | Poor   |
+| **02a** <br> <sub>([4x4 grid](https://imgur.com/a/EfOiKEx/all))</sub> | Fair         | Poor         | Good     | Poor   |
+| **03a** <br> <sub>([4x4 grid](https://imgur.com/a/ZioikGt/all))</sub> | Poor -> Good | Good -> Fair | Poor     | Poor   |
+| **03b** <br> <sub>([4x4 grid](https://imgur.com/a/SQGQl4r/all))</sub> | Good         | Poor         | Fair     | Poor   |
+| **04a** <br> <sub>([4x4 grid](https://imgur.com/a/qwISx6l/all))</sub> | Excellent    | Fair         | Good     | Poor   |
+| **05a** <br> <sub>([4x4 grid](https://imgur.com/a/57B1Gex/all))</sub> | Poor         | Poor         | Good     | Fair   |
+| **05b** <br> <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> |      |        |          |        |
+| **05c** <br> <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> |      |        |          |        |
+| **05d** <br> <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> |      |        |          |        |
+| **05e** <br> <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> |      |        |          |        |
+| **05f** <br> <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> |      |        |          |        |
 
 
 
