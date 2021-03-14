@@ -86,19 +86,19 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 
 | Clip                                                           | FGVC         | Hifill       | Deepfill | Opencv |
 | :-:                                                            | :-:          | :-:          | :-:      | :-:    |
-| 01a <br> <sub>([animation](https://imgur.com/a/v2mNWF8))</sub> | Excellent    | Fair         | Poor     | Poor   |
-| 01b <br> <sub>([animation](https://imgur.com/a/1jsc1ph))</sub> | Excellent    | Fair         | Poor     | Poor   |
-| 01c <br> <sub>([animation](https://imgur.com/a/hwFFKAL))</sub> | Excellent    | Good         | Poor     | Poor   |
-| 02a <br> <sub>([animation](https://imgur.com/a/EfOiKEx))</sub> | Fair         | Poor         | Good     | Poor   |
-| 03a <br> <sub>([animation](https://imgur.com/a/ZioikGt))</sub> | Poor -> Good | Good -> Fair | Poor     | Poor   |
-| 03b <br> <sub>([animation](https://imgur.com/a/SQGQl4r))</sub> |      |        |          |        |
-| 04a <br> <sub>([animation](https://imgur.com/a/qwISx6l))</sub> |      |        |          |        |
-| 05a <br> <sub>([animation](https://imgur.com/a/57B1Gex))</sub> |      |        |          |        |
-| 05b <br> <sub>([animation](https://imgur.com/a/S68m5k9))</sub> |      |        |          |        |
-| 05c <br> <sub>([animation](https://imgur.com/a/rP11OD1))</sub> |      |        |          |        |
-| 05d <br> <sub>([animation](https://imgur.com/a/4LhsFAa))</sub> |      |        |          |        |
-| 05e <br> <sub>([animation](https://imgur.com/a/ARnLu9G))</sub> |      |        |          |        |
-| 05f <br> <sub>([animation](https://imgur.com/a/9orp3cC))</sub> |      |        |          |        |
+| 01a <br> <sub>([animation](https://imgur.com/a/v2mNWF8/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
+| 01b <br> <sub>([animation](https://imgur.com/a/1jsc1ph/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
+| 01c <br> <sub>([animation](https://imgur.com/a/hwFFKAL/all))</sub> | Excellent    | Good         | Poor     | Poor   |
+| 02a <br> <sub>([animation](https://imgur.com/a/EfOiKEx/all))</sub> | Fair         | Poor         | Good     | Poor   |
+| 03a <br> <sub>([animation](https://imgur.com/a/ZioikGt/all))</sub> | Poor -> Good | Good -> Fair | Poor     | Poor   |
+| 03b <br> <sub>([animation](https://imgur.com/a/SQGQl4r/all))</sub> |      |        |          |        |
+| 04a <br> <sub>([animation](https://imgur.com/a/qwISx6l/all))</sub> |      |        |          |        |
+| 05a <br> <sub>([animation](https://imgur.com/a/57B1Gex/all))</sub> |      |        |          |        |
+| 05b <br> <sub>([animation](https://imgur.com/a/S68m5k9/all))</sub> |      |        |          |        |
+| 05c <br> <sub>([animation](https://imgur.com/a/rP11OD1/all))</sub> |      |        |          |        |
+| 05d <br> <sub>([animation](https://imgur.com/a/4LhsFAa/all))</sub> |      |        |          |        |
+| 05e <br> <sub>([animation](https://imgur.com/a/ARnLu9G/all))</sub> |      |        |          |        |
+| 05f <br> <sub>([animation](https://imgur.com/a/9orp3cC/all))</sub> |      |        |          |        |
 
 
 
