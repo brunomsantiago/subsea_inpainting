@@ -85,7 +85,7 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 
 
 | Clip                                                           | FGVC         | Hifill       | Deepfill | Opencv |
-|----------------------------------------------------------------|--------------|--------------|----------|--------|
+| :-:                                                            | :-:          | :-:          | :-:      | :-:    |
 | 01a <br> <sub>([animation](https://imgur.com/a/v2mNWF8))</sub> | Excellent    | Fair         | Poor     | Poor   |
 | 01b <br> <sub>([animation](https://imgur.com/a/1jsc1ph))</sub> | Excellent    | Fair         | Poor     | Poor   |
 | 01c <br> <sub>([animation](https://imgur.com/a/hwFFKAL))</sub> | Excellent    | Good         | Poor     | Poor   |
