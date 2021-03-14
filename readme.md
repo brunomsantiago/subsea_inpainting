@@ -84,13 +84,13 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 ## 5. Results
 
 
-| Clip                                                           | FGVC      | Hifill | Deepfill | Opencv |
-|----------------------------------------------------------------|-----------|--------|----------|--------|
-| 01a <br> <sub>([animation](https://imgur.com/a/v2mNWF8))</sub> | Excellent | Fair   | Poor     | Poor   |
-| 01b <br> <sub>([animation](https://imgur.com/a/1jsc1ph))</sub> | Excellent | Fair   | Poor     | Poor   |
-| 01c <br> <sub>([animation](https://imgur.com/a/hwFFKAL))</sub> | Excellent | Good   | Poor     | Poor   |
-| 02a <br> <sub>([animation](https://imgur.com/a/EfOiKEx))</sub> |      |        |          |        |
-| 03a <br> <sub>([animation](https://imgur.com/a/ZioikGt))</sub> |      |        |          |        |
+| Clip                                                           | FGVC         | Hifill       | Deepfill | Opencv |
+|----------------------------------------------------------------|--------------|--------------|----------|--------|
+| 01a <br> <sub>([animation](https://imgur.com/a/v2mNWF8))</sub> | Excellent    | Fair         | Poor     | Poor   |
+| 01b <br> <sub>([animation](https://imgur.com/a/1jsc1ph))</sub> | Excellent    | Fair         | Poor     | Poor   |
+| 01c <br> <sub>([animation](https://imgur.com/a/hwFFKAL))</sub> | Excellent    | Good         | Poor     | Poor   |
+| 02a <br> <sub>([animation](https://imgur.com/a/EfOiKEx))</sub> | Fair         | Poor         | Good     | Poor   |
+| 03a <br> <sub>([animation](https://imgur.com/a/ZioikGt))</sub> | Poor -> Good | Good -> Fair | Poor     | Poor   |
 | 03b <br> <sub>([animation](https://imgur.com/a/SQGQl4r))</sub> |      |        |          |        |
 | 04a <br> <sub>([animation](https://imgur.com/a/qwISx6l))</sub> |      |        |          |        |
 | 05a <br> <sub>([animation](https://imgur.com/a/57B1Gex))</sub> |      |        |          |        |
