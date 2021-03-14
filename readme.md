@@ -89,20 +89,24 @@ The output of the inpainting are the inpainted versions of individual frames ima
 
 For better visualization I made the results into Animated GIFs. There are for each subsea inpainting dataset clip:
 - A GIF comparing the 4 methods in a 4x4 grid
-  - Top left: Opencv
-  - Top right: Deepfill v1
-  - Bottom left: Hifill
-  - Bottom right: FGVC)
-- GIFs comparing each method to original masked frames
-  - Left: Original masked clip
-  - Right: Inpainted clip  
-- A GIF to analyse FGVC optical flow
-  - Top left: Original masked clip
-  - Top right: Inpainted clip
-  - Bottom left: Original forward optical flow
-  - Bottom right: Completed forward optical flow
+  <p align="center">
+    <img src="https://github.com/brunomsantiago/subsea_inpainting/raw/main/images/01a_05_full_compare.gif">
+    <br><b>Figure 3 - 4x4 inpainting comparison</b><br> (top left: Opencv | top right: Deepfill v1 | bottom left: Hifill | bottom right: FGVC)
+  </p>  
 
-All these GIFs are available for download as [single zip](https://drive.google.com/file/d/1dmw2F-WMNkEnjuYB3gDUyuYCqq5v1z_M/view?usp=sharing) (1.4 GB) from google drive. The 4x4 grids comparing the methods are also available on imgmur and linked below.
+- Several GIFs comparing each method to original masked frames
+  <p align="center">
+    <img src="https://github.com/brunomsantiago/subsea_inpainting/raw/main/images/01a_04_fgvc_compare.gif">
+    <br><b>Figure 4 - Side by side comparison</b><br> (left: Original masked clip | right: Inpainted by FGVC)
+  </p>  
+
+- A GIF to analyse FGVC optical flow
+  <p align="center">
+    <img src="https://github.com/brunomsantiago/subsea_inpainting/raw/main/images/01a_06_fgvc_compare_flows.gif">
+    <br><b>Figure 5 - FGVC Optical Forward Flow</b> <br> top left: Original masked clip | top right: Inpainted by FGVC | bottom left: Original Optical Flow | bottom right: Completed Optical Flow)
+  </p>    
+
+All the GIFs are available for download as [single zip](https://drive.google.com/file/d/1dmw2F-WMNkEnjuYB3gDUyuYCqq5v1z_M/view?usp=sharing) (1.4 GB) from google drive. The 4x4 grids comparing the methods are also available on imgmur and linked on the table below. On imgmur I recommend view in full screen for better visualization.
 <br>
 
 
