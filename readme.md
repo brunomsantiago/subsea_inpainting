@@ -85,6 +85,8 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 
 ## 5. Results
 
+### 5.1. Overview
+
 The output of the inpainting are the inpainted versions of individual frames images (PNG files). FGVC also outputs the optical flow, the original and the completed one. All generated images, from the 13 clips, can be download as [single zip](https://drive.google.com/file/d/1jUv7pgKGsEN3_L5F_qsxe-QKISmY51p7/view?usp=sharing) (775 MB) from google drive.
 
 For better visualization I made the results into Animated GIFs. There are for each subsea inpainting dataset clip:
@@ -109,22 +111,30 @@ For better visualization I made the results into Animated GIFs. There are for ea
 All the GIFs are available for download as [single zip](https://drive.google.com/file/d/1dmw2F-WMNkEnjuYB3gDUyuYCqq5v1z_M/view?usp=sharing) (1.4 GB) from google drive. The 4x4 grids comparing the methods are also available on imgmur and linked on the table below. On imgmur I recommend view in full screen for better visualization.
 <br>
 
+### 5.2. Quality Assessment
 
-| Clip                                                             | FGVC         | Hifill       | Deepfill | Opencv |
-| :-:                                                              | :-:          | :-:          | :-:      | :-:    |
-| **01a** <sub>([4x4 grid](https://imgur.com/a/v2mNWF8/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
-| **01b** <sub>([4x4 grid](https://imgur.com/a/1jsc1ph/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
-| **01c** <sub>([4x4 grid](https://imgur.com/a/hwFFKAL/all))</sub> | Excellent    | Good         | Poor     | Poor   |
-| **02a** <sub>([4x4 grid](https://imgur.com/a/EfOiKEx/all))</sub> | Fair         | Poor         | Good     | Poor   |
-| **03a** <sub>([4x4 grid](https://imgur.com/a/ZioikGt/all))</sub> | Poor -> Good | Good -> Fair | Poor     | Poor   |
-| **03b** <sub>([4x4 grid](https://imgur.com/a/SQGQl4r/all))</sub> | Good         | Poor         | Fair     | Poor   |
-| **04a** <sub>([4x4 grid](https://imgur.com/a/qwISx6l/all))</sub> | Excellent    | Fair         | Good     | Poor   |
-| **05a** <sub>([4x4 grid](https://imgur.com/a/57B1Gex/all))</sub> | Poor         | Poor         | Good     | Fair   |
-| **05b** <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> | Poor         | Poor         | Good     | Fair   |
-| **05c** <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> | Poor         | Poor         | Poor     | Fair   |
-| **05d** <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> | Poor         | Fair         | Fair     | Poor   |
-| **05e** <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> | Poor -> Good | Poor         | Fair     | Poor   |
-| **05f** <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> | Fair         | Fair         | Fair     | Poor   |
+The results were evaluated visually and subjectively classified in a four grade rank:
+ - **Excellent** - It is not easy to detect the images were inpainted. It almost seems like magic.
+ - **Good** - At least in some regions is easy to detect it was inpainted. Despite of detection it doesn't look too bad and it maybe not so easy to detect looking into individual frames.
+ - **Fair** - It easy to detect the images, even on individual frames. However the inpainting artifacts aren't outstanding.
+ - **Poor** - It is very easy to detect the image was inpainted, usually because of weird outstanding inpainting artifacts.
+
+
+| Clip                                                             | Number of Frames | FGVC         | Hifill       | Deepfill | Opencv |
+| :-:                                                              | :--:             | :-:          | :-:          | :-:      | :-:    |
+| **01a** <sub>([4x4 grid](https://imgur.com/a/v2mNWF8/all))</sub> |                  | Excellent    | Fair         | Poor     | Poor   |
+| **01b** <sub>([4x4 grid](https://imgur.com/a/1jsc1ph/all))</sub> |                  | Excellent    | Fair         | Poor     | Poor   |
+| **01c** <sub>([4x4 grid](https://imgur.com/a/hwFFKAL/all))</sub> |                  | Excellent    | Good         | Poor     | Poor   |
+| **02a** <sub>([4x4 grid](https://imgur.com/a/EfOiKEx/all))</sub> |                  | Fair         | Poor         | Good     | Poor   |
+| **03a** <sub>([4x4 grid](https://imgur.com/a/ZioikGt/all))</sub> |                  | Poor -> Good | Good -> Fair | Poor     | Poor   |
+| **03b** <sub>([4x4 grid](https://imgur.com/a/SQGQl4r/all))</sub> |                  | Good         | Poor         | Fair     | Poor   |
+| **04a** <sub>([4x4 grid](https://imgur.com/a/qwISx6l/all))</sub> |                  | Excellent    | Fair         | Good     | Poor   |
+| **05a** <sub>([4x4 grid](https://imgur.com/a/57B1Gex/all))</sub> |                  | Poor         | Poor         | Good     | Fair   |
+| **05b** <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> |                  | Poor         | Poor         | Good     | Fair   |
+| **05c** <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> |                  | Poor         | Poor         | Poor     | Fair   |
+| **05d** <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> |                  | Poor         | Fair         | Fair     | Poor   |
+| **05e** <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> |                  | Poor -> Good | Poor         | Fair     | Poor   |
+| **05f** <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> |                  | Fair         | Fair         | Fair     | Poor   |
 
 #### General notes
  - Most methods perform badly on low brightness areas
