@@ -34,7 +34,9 @@ Both the clips and masks are provided as individual PNG images with the same nam
 
 The dataset was created by watching and downloading lots of youtube videos of subsea operations, mostly subsea inspections. Initially 43 videos were selected for further analysis and in the end only 5 was kept. These 5 videos are most similar to private videos I have seen on my work experience at Oil and Gas industry, however not exactly similar.
 
-For download and more details about the folder structure of the dataset see [Subsea Inpainting Dataset at Kaggle Datasets](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset). As alternative mirror you can download from [google drive](https://drive.google.com/file/d/1sTC4ELGfw1BMeHkhDVB8Kv3yHn-GJWVv/view?usp=sharing) as single zip, which is speacially useful if you need to copy the dataset to your own google drive and run the colab notebooks in section 4.
+Several steps were executed to transform the originals videos into the clips. First I extract frames to individual images. Then using a image viewer I chose which frames to keep and which to delete. Next I created a mask template using a image editing software. Then I made several copies of this mask template matching the individual frames filenames. The code that supported some of the steps is available in [creating_the_dataset.ipynb](https://nbviewer.jupyter.org/github/brunomsantiago/subsea_inpainting/blob/main/other_notebooks/creating_the_dataset.ipynb).
+
+For download and more details about the folder structure of the dataset see [Subsea Inpainting Dataset at Kaggle Datasets](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset). As alternative mirror you can download from [google drive](https://drive.google.com/file/d/1OaTLKxkgKlAXMD4PFeHu4YxVVR_nqrkL/view?usp=sharing) as single zip, which is speacially useful if you need to copy the dataset to your own google drive and run the colab notebooks in section 4.
 
 ## 3. Inpainting techniques tested
 
@@ -99,6 +101,11 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 | **05d** <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> | Poor         | Fair         | Fair     | Poor   |
 | **05e** <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> | Poor -> Good | Poor         | Fair     | Poor   |
 | **05f** <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> | Fair         | Fair         | Fair     | Poor   |
+
+#### General notes
+ - Most methods perform badly on low brightness areas
+   - However opencv tends to perform better in these areas
+   - FGVC is the worse in these areas. It seems to have issues tracking pixels between frames in low brightness area.
 
 
 
