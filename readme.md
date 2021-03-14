@@ -162,19 +162,19 @@ Opencv processing time used as baseline (1x)
 
 | Clip     | Number of Frames | FGVC                                            | Hifill                                        | Deepfill                                    | Opencv                                      |
 | :-:      | :-:              | :-:                                             | :-:                                           | :-:                                         | :-:                                         |
-| **01a**  | 20               | 229 s <br> <sub> (11.45 s/frame) (72 x) </sub>  | 48 s <br> <sub> (2.40 s/frame) (15 x) </sub>  | 8 s <br> <sub> (0.42 s/frame) (3 x) </sub>  | 3 s <br> <sub> (0.16 s/frame) (1 x) </sub>  |
-| **01b**  | 50               | 576 s <br> <sub> (11.53 s/frame) (56 x) </sub>  | 134 s <br> <sub> (2.68 s/frame) (13 x) </sub> | 26 s <br> <sub> (0.53 s/frame) (3 x) </sub> | 10 s <br> <sub> (0.21 s/frame) (1 x) </sub> |
-| **01c**  | 40               | 512 s <br> <sub> (12.80 s/frame) (64 x) </sub>  | 96 s <br> <sub> (2.39 s/frame) (12 x) </sub>  | 16 s <br> <sub> (0.39 s/frame) (2 x) </sub> | 8 s <br> <sub> (0.20 s/frame) (1 x) </sub>  |
-| **02a**  | 40               | 622 s <br> <sub> (15.54 s/frame) (66 x) </sub>  | 118 s <br> <sub> (2.95 s/frame) (13 x) </sub> | 36 s <br> <sub> (0.91 s/frame) (4 x) </sub> | 9 s <br> <sub> (0.24 s/frame) (1 x) </sub>  |
-| **03a**  | 40               | 649 s <br> <sub> (16.23 s/frame) (85 x) </sub>  | 95 s <br> <sub> (2.38 s/frame) (13 x) </sub>  | 11 s <br> <sub> (0.29 s/frame) (2 x) </sub> | 8 s <br> <sub> (0.19 s/frame) (1 x) </sub>  |
-| **03b**  | 20               | 286 s <br> <sub> (14.29 s/frame) (64 x) </sub>  | 48 s <br> <sub> (2.38 s/frame) (11 x) </sub>  | 6 s <br> <sub> (0.32 s/frame) (1 x) </sub>  | 4 s <br> <sub> (0.23 s/frame) (1 x) </sub>  |
-| **04a**  | 30               | 411 s <br> <sub> (13.69 s/frame) (75 x) </sub>  | 72 s <br> <sub> (2.39 s/frame) (13 x) </sub>  | 10 s <br> <sub> (0.33 s/frame) (2 x) </sub> | 6 s <br> <sub> (0.18 s/frame) (1 x) </sub>  |
-| **05a**  | 69               | 997 s <br> <sub> (14.46 s/frame) (46 x) </sub>  | 174 s <br> <sub> (2.52 s/frame) (8 x) </sub>  | 40 s <br> <sub> (0.58 s/frame) (2 x) </sub> | 22 s <br> <sub> (0.31 s/frame) (1 x) </sub> |
-| **05b**  | 40               | 489 s <br> <sub> (12.23 s/frame) (71 x) </sub>  | 98 s <br> <sub> (2.45 s/frame) (14 x) </sub>  | 12 s <br> <sub> (0.30 s/frame) (2 x) </sub> | 7 s <br> <sub> (0.17 s/frame) (1 x) </sub>  |
-| **05c**  | 80               | 1104 s <br> <sub> (13.80 s/frame) (32 x) </sub> | 194 s <br> <sub> (2.42 s/frame) (6 x) </sub>  | 24 s <br> <sub> (0.30 s/frame) (1 x) </sub> | 34 s <br> <sub> (0.43 s/frame) (1 x) </sub> |
-| **05d**  | 30               | 345 s <br> <sub> (11.50 s/frame) (64 x) </sub>  | 72 s <br> <sub> (2.38 s/frame) (13 x) </sub>  | 9 s <br> <sub> (0.31 s/frame) (2 x) </sub>  | 5 s <br> <sub> (0.18 s/frame) (1 x) </sub>  |
-| **05e**  | 30               | 343 s <br> <sub> (11.44 s/frame) (70 x) </sub>  | 73 s <br> <sub> (2.43 s/frame) (15 x) </sub>  | 9 s <br> <sub> (0.29 s/frame) (2 x) </sub>  | 5 s <br> <sub> (0.16 s/frame) (1 x) </sub>  |
-| **05f**  | 40               | 452 s <br> <sub> (11.31 s/frame) (72 x) </sub>  | 94 s <br> <sub> (2.36 s/frame) (15 x) </sub>  | 11 s <br> <sub> (0.28 s/frame) (2 x) </sub> | 6 s <br> <sub> (0.16 s/frame) (1 x) </sub>  |
+| **01a**  | 20               | 229 s <sub> (11.45 s/frame) (72 x) </sub>  | 48 s <sub> (2.40 s/frame) (15 x) </sub>  | 8 s <sub> (0.42 s/frame) (3 x) </sub>  | 3 s <sub> (0.16 s/frame) (1 x) </sub>  |
+| **01b**  | 50               | 576 s <sub> (11.53 s/frame) (56 x) </sub>  | 134 s <sub> (2.68 s/frame) (13 x) </sub> | 26 s <sub> (0.53 s/frame) (3 x) </sub> | 10 s <sub> (0.21 s/frame) (1 x) </sub> |
+| **01c**  | 40               | 512 s <sub> (12.80 s/frame) (64 x) </sub>  | 96 s <sub> (2.39 s/frame) (12 x) </sub>  | 16 s <sub> (0.39 s/frame) (2 x) </sub> | 8 s <sub> (0.20 s/frame) (1 x) </sub>  |
+| **02a**  | 40               | 622 s <sub> (15.54 s/frame) (66 x) </sub>  | 118 s <sub> (2.95 s/frame) (13 x) </sub> | 36 s <sub> (0.91 s/frame) (4 x) </sub> | 9 s <sub> (0.24 s/frame) (1 x) </sub>  |
+| **03a**  | 40               | 649 s <sub> (16.23 s/frame) (85 x) </sub>  | 95 s <sub> (2.38 s/frame) (13 x) </sub>  | 11 s <sub> (0.29 s/frame) (2 x) </sub> | 8 s <sub> (0.19 s/frame) (1 x) </sub>  |
+| **03b**  | 20               | 286 s <sub> (14.29 s/frame) (64 x) </sub>  | 48 s <sub> (2.38 s/frame) (11 x) </sub>  | 6 s <sub> (0.32 s/frame) (1 x) </sub>  | 4 s <sub> (0.23 s/frame) (1 x) </sub>  |
+| **04a**  | 30               | 411 s <sub> (13.69 s/frame) (75 x) </sub>  | 72 s <sub> (2.39 s/frame) (13 x) </sub>  | 10 s <sub> (0.33 s/frame) (2 x) </sub> | 6 s <sub> (0.18 s/frame) (1 x) </sub>  |
+| **05a**  | 69               | 997 s <sub> (14.46 s/frame) (46 x) </sub>  | 174 s <sub> (2.52 s/frame) (8 x) </sub>  | 40 s <sub> (0.58 s/frame) (2 x) </sub> | 22 s <sub> (0.31 s/frame) (1 x) </sub> |
+| **05b**  | 40               | 489 s <sub> (12.23 s/frame) (71 x) </sub>  | 98 s <sub> (2.45 s/frame) (14 x) </sub>  | 12 s <sub> (0.30 s/frame) (2 x) </sub> | 7 s <sub> (0.17 s/frame) (1 x) </sub>  |
+| **05c**  | 80               | 1104 s <sub> (13.80 s/frame) (32 x) </sub> | 194 s <sub> (2.42 s/frame) (6 x) </sub>  | 24 s <sub> (0.30 s/frame) (1 x) </sub> | 34 s <sub> (0.43 s/frame) (1 x) </sub> |
+| **05d**  | 30               | 345 s <sub> (11.50 s/frame) (64 x) </sub>  | 72 s <sub> (2.38 s/frame) (13 x) </sub>  | 9 s <sub> (0.31 s/frame) (2 x) </sub>  | 5 s <sub> (0.18 s/frame) (1 x) </sub>  |
+| **05e**  | 30               | 343 s <sub> (11.44 s/frame) (70 x) </sub>  | 73 s <sub> (2.43 s/frame) (15 x) </sub>  | 9 s <sub> (0.29 s/frame) (2 x) </sub>  | 5 s <sub> (0.16 s/frame) (1 x) </sub>  |
+| **05f**  | 40               | 452 s <sub> (11.31 s/frame) (72 x) </sub>  | 94 s <sub> (2.36 s/frame) (15 x) </sub>  | 11 s <sub> (0.28 s/frame) (2 x) </sub> | 6 s <sub> (0.16 s/frame) (1 x) </sub>  |
 
 ## 6. Discussion
 
