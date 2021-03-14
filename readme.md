@@ -85,6 +85,26 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 
 ## 5. Results
 
+The output of the inpainting are the inpainted versions of individual frames images (PNG files). FGVC also outputs the optical flow, the original and the completed one. All generated images, from the 13 clips, can be download as [single zip](https://drive.google.com/file/d/1jUv7pgKGsEN3_L5F_qsxe-QKISmY51p7/view?usp=sharing) (775 MB) from google drive.
+
+For better visualization I made the results into Animated GIFs. There are for each subsea inpainting dataset clip:
+- A GIF comparing the 4 methods in a 4x4 grid
+  - Top left: Opencv
+  - Top right: Deepfill v1
+  - Bottom left: Hifill
+  - Bottom right: FGVC)
+- GIFs comparing each method to original masked frames
+  - Left: Original masked clip
+  - Right: Inpainted clip  
+- A GIF to analyse FGVC optical flow
+  - Top left: Original masked clip
+  - Top right: Inpainted clip
+  - Bottom left: Original forward optical flow
+  - Bottom right: Completed forward optical flow
+
+All these GIFs are available for download as [single zip](https://drive.google.com/file/d/1dmw2F-WMNkEnjuYB3gDUyuYCqq5v1z_M/view?usp=sharing) (1.4 GB) from google drive. The 4x4 grids comparing the methods are also available on imgmur and linked below.
+<br>
+
 
 | Clip                                                             | FGVC         | Hifill       | Deepfill | Opencv |
 | :-:                                                              | :-:          | :-:          | :-:      | :-:    |
