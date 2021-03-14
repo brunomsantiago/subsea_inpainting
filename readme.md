@@ -83,4 +83,25 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 
 ## 5. Results
 
+
+| Clip                                                           | FGVC      | Hifill | Deepfill | Opencv |
+|----------------------------------------------------------------|-----------|--------|----------|--------|
+| 01a <br> <sub>([animation](https://imgur.com/a/v2mNWF8))</sub> | Excellent | Fair   | Poor     | Poor   |
+| 01b <br> <sub>([animation](https://imgur.com/a/1jsc1ph))</sub> |      |        |          |        |
+| 01c <br> <sub>([animation](https://imgur.com/a/hwFFKAL))</sub> |      |        |          |        |
+| 02a <br> <sub>([animation](https://imgur.com/a/EfOiKEx))</sub> |      |        |          |        |
+| 03a <br> <sub>([animation](https://imgur.com/a/ZioikGt))</sub> |      |        |          |        |
+| 03b <br> <sub>([animation](https://imgur.com/a/SQGQl4r))</sub> |      |        |          |        |
+| 04a <br> <sub>([animation](https://imgur.com/a/qwISx6l))</sub> |      |        |          |        |
+| 05a <br> <sub>([animation](https://imgur.com/a/57B1Gex))</sub> |      |        |          |        |
+| 05b <br> <sub>([animation](https://imgur.com/a/S68m5k9))</sub> |      |        |          |        |
+| 05c <br> <sub>([animation](https://imgur.com/a/rP11OD1))</sub> |      |        |          |        |
+| 05d <br> <sub>([animation](https://imgur.com/a/4LhsFAa))</sub> |      |        |          |        |
+| 05e <br> <sub>([animation](https://imgur.com/a/ARnLu9G))</sub> |      |        |          |        |
+| 05f <br> <sub>([animation](https://imgur.com/a/9orp3cC))</sub> |      |        |          |        |
+
+
+
+
+
 ## 6. Discussion
