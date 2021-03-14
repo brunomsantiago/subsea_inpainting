@@ -1,7 +1,6 @@
 # Subsea Inpainting
 ### Removing overlays from subsea inspection videos <br><br>
 
-
 ## 1. Introduction
 
 Oil and Gas industry generates thousands of hours of subsea inspection videos per day. The Oil and Gas operators also have millions of hours of archived video. <br>
