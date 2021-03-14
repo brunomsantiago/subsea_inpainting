@@ -22,7 +22,7 @@ As an intermediate step two other contributions were made. A [Subsea Inpainting 
 
 ## 2. The Dataset
 
-The dataset is composed of 13 small clips of subsea operations that were extracted from 5 videos. It also contains masks covering the overlay for each clip. Each clip has between 15 and 80 frames. The clips are this short because one of the inpainting techniques tested, without modifications, is not able to process long sequences, running out of memory.
+The dataset is composed of 13 small clips of subsea operations that were extracted from 5 videos. It also contains masks covering the overlay for each clip. Each clip has between 20 and 80 frames. The clips are this short because one of the inpainting techniques tested, without modifications, is not able to process long sequences, running out of memory.
 
 Both the clips and masks are provided as individual PNG images with the same name in different folders. The masks are black and white images. White means inpaint here and black means keep the original content.
 
@@ -122,19 +122,19 @@ The results were evaluated visually and subjectively classified in a four grade 
 
 | Clip                                                             | Number of Frames | FGVC         | Hifill       | Deepfill | Opencv |
 | :-:                                                              | :--:             | :-:          | :-:          | :-:      | :-:    |
-| **01a** <sub>([4x4 grid](https://imgur.com/a/v2mNWF8/all))</sub> |                  | Excellent    | Fair         | Poor     | Poor   |
-| **01b** <sub>([4x4 grid](https://imgur.com/a/1jsc1ph/all))</sub> |                  | Excellent    | Fair         | Poor     | Poor   |
-| **01c** <sub>([4x4 grid](https://imgur.com/a/hwFFKAL/all))</sub> |                  | Excellent    | Good         | Poor     | Poor   |
-| **02a** <sub>([4x4 grid](https://imgur.com/a/EfOiKEx/all))</sub> |                  | Fair         | Poor         | Good     | Poor   |
-| **03a** <sub>([4x4 grid](https://imgur.com/a/ZioikGt/all))</sub> |                  | Poor -> Good | Good -> Fair | Poor     | Poor   |
-| **03b** <sub>([4x4 grid](https://imgur.com/a/SQGQl4r/all))</sub> |                  | Good         | Poor         | Fair     | Poor   |
-| **04a** <sub>([4x4 grid](https://imgur.com/a/qwISx6l/all))</sub> |                  | Excellent    | Fair         | Good     | Poor   |
-| **05a** <sub>([4x4 grid](https://imgur.com/a/57B1Gex/all))</sub> |                  | Poor         | Poor         | Good     | Fair   |
-| **05b** <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> |                  | Poor         | Poor         | Good     | Fair   |
-| **05c** <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> |                  | Poor         | Poor         | Poor     | Fair   |
-| **05d** <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> |                  | Poor         | Fair         | Fair     | Poor   |
-| **05e** <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> |                  | Poor -> Good | Poor         | Fair     | Poor   |
-| **05f** <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> |                  | Fair         | Fair         | Fair     | Poor   |
+| **01a** <sub>([4x4 grid](https://imgur.com/a/v2mNWF8/all))</sub> | 20               | Excellent    | Fair         | Poor     | Poor   |
+| **01b** <sub>([4x4 grid](https://imgur.com/a/1jsc1ph/all))</sub> | 50               | Excellent    | Fair         | Poor     | Poor   |
+| **01c** <sub>([4x4 grid](https://imgur.com/a/hwFFKAL/all))</sub> | 40               | Excellent    | Good         | Poor     | Poor   |
+| **02a** <sub>([4x4 grid](https://imgur.com/a/EfOiKEx/all))</sub> | 40               | Fair         | Poor         | Good     | Poor   |
+| **03a** <sub>([4x4 grid](https://imgur.com/a/ZioikGt/all))</sub> | 40               | Poor -> Good | Good -> Fair | Poor     | Poor   |
+| **03b** <sub>([4x4 grid](https://imgur.com/a/SQGQl4r/all))</sub> | 20               | Good         | Poor         | Fair     | Poor   |
+| **04a** <sub>([4x4 grid](https://imgur.com/a/qwISx6l/all))</sub> | 30               | Excellent    | Fair         | Good     | Poor   |
+| **05a** <sub>([4x4 grid](https://imgur.com/a/57B1Gex/all))</sub> | 69               | Poor         | Poor         | Good     | Fair   |
+| **05b** <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> | 40               | Poor         | Poor         | Good     | Fair   |
+| **05c** <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> | 80               | Poor         | Poor         | Poor     | Fair   |
+| **05d** <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> | 30               | Poor         | Fair         | Fair     | Poor   |
+| **05e** <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> | 30               | Poor -> Good | Poor         | Fair     | Poor   |
+| **05f** <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> | 40               | Fair         | Fair         | Fair     | Poor   |
 
 #### General notes
  - Most methods perform badly on low brightness areas
