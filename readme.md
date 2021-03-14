@@ -93,7 +93,7 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 | 03a <br> <sub>([animation](https://imgur.com/a/ZioikGt/all))</sub> | Poor -> Good | Good -> Fair | Poor     | Poor   |
 | 03b <br> <sub>([animation](https://imgur.com/a/SQGQl4r/all))</sub> | Good         | Poor         | Fair     | Poor   |
 | 04a <br> <sub>([animation](https://imgur.com/a/qwISx6l/all))</sub> | Excellent    | Fair         | Good     | Poor   |
-| 05a <br> <sub>([animation](https://imgur.com/a/57B1Gex/all))</sub> |      |        |          |        |
+| 05a <br> <sub>([animation](https://imgur.com/a/57B1Gex/all))</sub> | Poor         | Poor         | Good     | Fair   |
 | 05b <br> <sub>([animation](https://imgur.com/a/S68m5k9/all))</sub> |      |        |          |        |
 | 05c <br> <sub>([animation](https://imgur.com/a/rP11OD1/all))</sub> |      |        |          |        |
 | 05d <br> <sub>([animation](https://imgur.com/a/4LhsFAa/all))</sub> |      |        |          |        |
