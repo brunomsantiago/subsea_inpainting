@@ -36,7 +36,7 @@ The dataset was created by watching and downloading lots of youtube videos of su
 
 Several steps were executed to transform the originals videos into the clips. First I extract frames to individual images. Then using a image viewer I chose which frames to keep and which to delete. Next I created a mask template using a image editing software. Then I made several copies of this mask template matching the individual frames filenames. The code that supported some of the steps is available in [creating_the_dataset.ipynb](https://nbviewer.jupyter.org/github/brunomsantiago/subsea_inpainting/blob/main/other_notebooks/creating_the_dataset.ipynb).
 
-For download and more details about the folder structure of the dataset see [Subsea Inpainting Dataset at Kaggle Datasets](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset). As alternative mirror you can download from [google drive](https://drive.google.com/file/d/1OaTLKxkgKlAXMD4PFeHu4YxVVR_nqrkL/view?usp=sharing) as single zip, which is speacially useful if you need to copy the dataset to your own google drive and run the colab notebooks in section 4.
+For download and more details about the folder structure of the dataset see [Subsea Inpainting Dataset at Kaggle Datasets](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset). As alternative mirror you can download from [google drive as single zip](https://drive.google.com/file/d/1OaTLKxkgKlAXMD4PFeHu4YxVVR_nqrkL/view?usp=sharing) (334 MB), which is speacially useful if you need to copy the dataset to your own google drive and run the colab notebooks in section 4.
 
 ## 3. Inpainting techniques tested
 
