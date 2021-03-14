@@ -17,7 +17,7 @@
   + [5.3 Processing times](#53-processing-times)
 * [6. Discussion](#6-discussion)
   + [6.1. Quality](#61-quality)
-  + [6.2 Processing time](#62-processing-time)
+  + [6.2. Processing time](#62-processing-time)
   + [6.3. Robustness](#63-robustness)
   + [6.4 Easy of use](#64-easy-of-use)
 - [7. Downloads](#7-downloads)
@@ -184,7 +184,7 @@ Opencv processing time used as baseline (1x)
   - However opencv tends to perform better in these areas
   - FGVC is the worse in these areas. It seems to have issues tracking pixels between frames in low brightness area.
 
-### 6.2 Processing time
+### 6.2. Processing time
 
 ### 6.3. Robustness
 
