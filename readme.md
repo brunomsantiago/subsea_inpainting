@@ -84,8 +84,8 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 ## 5. Results
 
 
-| Clip                                                               | FGVC         | Hifill       | Deepfill | Opencv |
-| :-:                                                                | :-:          | :-:          | :-:      | :-:    |
+| Clip                                                             | FGVC         | Hifill       | Deepfill | Opencv |
+| :-:                                                              | :-:          | :-:          | :-:      | :-:    |
 | **01a** <sub>([4x4 grid](https://imgur.com/a/v2mNWF8/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
 | **01b** <sub>([4x4 grid](https://imgur.com/a/1jsc1ph/all))</sub> | Excellent    | Fair         | Poor     | Poor   |
 | **01c** <sub>([4x4 grid](https://imgur.com/a/hwFFKAL/all))</sub> | Excellent    | Good         | Poor     | Poor   |
@@ -94,7 +94,7 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 | **03b** <sub>([4x4 grid](https://imgur.com/a/SQGQl4r/all))</sub> | Good         | Poor         | Fair     | Poor   |
 | **04a** <sub>([4x4 grid](https://imgur.com/a/qwISx6l/all))</sub> | Excellent    | Fair         | Good     | Poor   |
 | **05a** <sub>([4x4 grid](https://imgur.com/a/57B1Gex/all))</sub> | Poor         | Poor         | Good     | Fair   |
-| **05b** <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> |      |        |          |        |
+| **05b** <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> | Poor         | Poor         | Good     | Fair   |
 | **05c** <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> |      |        |          |        |
 | **05d** <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> |      |        |          |        |
 | **05e** <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> |      |        |          |        |
