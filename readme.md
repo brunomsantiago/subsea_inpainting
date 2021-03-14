@@ -95,11 +95,10 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 | **04a** <sub>([4x4 grid](https://imgur.com/a/qwISx6l/all))</sub> | Excellent    | Fair         | Good     | Poor   |
 | **05a** <sub>([4x4 grid](https://imgur.com/a/57B1Gex/all))</sub> | Poor         | Poor         | Good     | Fair   |
 | **05b** <sub>([4x4 grid](https://imgur.com/a/S68m5k9/all))</sub> | Poor         | Poor         | Good     | Fair   |
-| **05c** <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> |      |        |          |        |
-| **05d** <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> |      |        |          |        |
-| **05e** <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> |      |        |          |        |
-| **05f** <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> |      |        |          |        |
-
+| **05c** <sub>([4x4 grid](https://imgur.com/a/rP11OD1/all))</sub> | Poor         | Poor         | Poor     | Fair   |
+| **05d** <sub>([4x4 grid](https://imgur.com/a/4LhsFAa/all))</sub> | Poor         | Fair         | Fair     | Poor   |
+| **05e** <sub>([4x4 grid](https://imgur.com/a/ARnLu9G/all))</sub> | Poor -> Good | Poor         | Fair     | Poor   |
+| **05f** <sub>([4x4 grid](https://imgur.com/a/9orp3cC/all))</sub> | Fair         | Fair         | Fair     | Poor   |
 
 
 
