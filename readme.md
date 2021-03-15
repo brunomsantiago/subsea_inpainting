@@ -180,9 +180,19 @@ Opencv processing time used as baseline (1x)
 
 ### 6.1. Quality
 
-- Most methods perform badly on low brightness areas
-  - However opencv tends to perform better in these areas
-  - FGVC is the worse in these areas. It seems to have issues tracking pixels between frames in low brightness area.
+FGVC is an truly awesome work and sometimes its results are amazing, looking like magic. Unfortunately sometimes the results are not so good. Deepfill and Hifill results were not even close to the quality of FGVC.
+
+I would need to make additional clips to confirm, but it seems to me FGVC has quality issues with longer sequences of frames. Make longer clips of the good results, make smaller clips of the bad ones.
+
+All three learning based methods (FGVC, Deepfill, Hifill), but mostly FGVC seems to have issue with some semi-uniform backgrounds, specially with low brightness and high noise. This issues appears on clips 3a, 5a, 5b, 5c, 5d and 5e.
+ - I would need to investigate further, but it seems to me FGVC has false positive matching of pixels between frames in such scenario, propagating wrong data. Deepfill, which is used by FGVC to hallucinate completely missing pixels performed much better in these clips, except on clip 3a.
+ - The low quality of FGVC results on these clips doesn't seem to be associated with the optical flow. The completed flow seems good.
+ - Just for the records, Opencv method has good results in these areas and seemingly only in these areas.
+
+**On the quality aspect none of the methods tested is production ready yet**, at least not for this application. However all three learning based methods could probably improve a lot by training on a large dataset of subsea inspection images without overlay.
+
+It not seems that hard to build with access to an Oil and Gas operator subsea video archive. Mostly the overlay are on the top and bottom of the videos, and can be easily cropped out. After cropping the aspect ratio would be weird, but it can also be fixed cropping at both sides, creating two "overlayless" images from the original image or with a center crop, creating only one. The only data annotation needed would be two vertical coordinates to crop the overlay out.
+
 
 ### 6.2. Processing time
 
