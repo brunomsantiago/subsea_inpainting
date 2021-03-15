@@ -155,7 +155,8 @@ The results were evaluated visually and subjectively classified in a four grade 
 
 ### 5.3 Processing times
 
-Opencv processing time used as baseline (1x)
+ - The methods were executed on Google Colab free GPU instances in march 2021, which means the GPU was probably a K80.
+ - Opencv processing times was used as baseline (1x).
 
 | Clip     | Number of Frames | FGVC                                            | Hifill                                        | Deepfill                                    | Opencv                                      |
 | :-:      | :-:              | :-:                                             | :-:                                           | :-:                                         | :-:                                         |
