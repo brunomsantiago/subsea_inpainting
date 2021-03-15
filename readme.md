@@ -212,4 +212,10 @@ FGVC didn't work with some frame resolutions and aspect ratio, raising errors an
 
 ### 6.4 Easy of use
 
+I admire researchers who publish the code and weights, making easier for others to test their methods with their own data. However python scripts and jupyter notebooks are not a production ready solution. A good solution for common users should, at least:
+ - Have a good graphic interface, desktop or online.
+ - Accept video files as inputs
+ - Allow the user to draw their own mask on top of the video.
+ - Allow process video in batches.
+
 # 7. Downloads
