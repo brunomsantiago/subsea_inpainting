@@ -218,4 +218,12 @@ I admire researchers who publish the code and weights, making easier for others 
  - Allow the user to draw their own mask on top of the video.
  - Allow process video in batches.
 
+### 6.5 Final remarks
+
+From the four methods tests, overall, the FGVC had the best results. It has potential to evolve into a production ready method, but are not ready yet, both in quality and processing speed. It's worth noting that FGVC was the only video method tested, but there are others like Deep Video Inpainting ([paper](https://arxiv.org/abs/1905.02949), [code](https://github.com/mcahny/Deep-Video-Inpainting), [video](https://youtu.be/RtThGNTvkjY)) and Deep Flow-Guided Video Inpainting ([paper](https://arxiv.org/abs/1905.02884), [code](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting), [video](https://youtu.be/LIJPUsrwx5E)).
+
+I am not sure if it is possible to get excellent quality (with temporal consistency) using a frame by frame method like Deepfill and Hifill, however their results seems to have much room for improvement.
+
+Regardless of the method, for broad application remove overlays from subsea inspection videos it will be necessary to have a full application.
+
 # 7. Downloads
