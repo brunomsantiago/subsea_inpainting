@@ -194,6 +194,18 @@ It does not seem too hard to build such dataset, but it's necessary access to an
 
 ### 6.2. Processing time
 
+The code was executed in Google Colab with free GPU instances, so there is room for improvement with better hardware.
+
+Overall the FGVC processing times were very long, between 11 and 16 seconds per frame. It took as long as 18,4 minutes for a 80 frames long clip. FGVC times were between 46x and 72x slower than Opencv.
+
+ It was expected that FGVC times would be slower, as it has a complex pipeline and is a quite new method, product of a research project published just few months ago. On the other hand FGVC seems to have a lot of room for optimization.
+
+ For example, the [FGVC tool code]() seem to compare each frame with all other frames in a sequence, in order to propagate data between them. Probably it is possible to improve its speed without loosing quality focusing the frame propagation to nearby frames.
+
+ Another example of optimization, useful for all methods but specially for CPU intensive ones like FGVC is to split long sequences of frames into small clips, maybe with a little overlaping between them. By processing these clips in parallel, with different cores from CPU or GPU, is possible to drop the average processing speed to acceptable levels.
+
+  **Without at least a order of magnitude improvement in processing time, FGVC is suitable to remove overlay of subsea inspection videos**, which can be very long. A single operation may have many hours of video data.
+
 ### 6.3. Robustness
 
 ### 6.4 Easy of use
