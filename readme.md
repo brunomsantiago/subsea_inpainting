@@ -189,7 +189,7 @@ All three learning based methods (FGVC, Deepfill, Hifill), but mostly FGVC seems
 
 **On the quality aspect none of the methods tested is production ready yet**, at least not for this application. However all three learning based methods could probably improve a lot by training on a large dataset of subsea inspection images without overlay.
 
-It not seems that hard to build with access to an Oil and Gas operator subsea video archive. Mostly the overlay are on the top and bottom of the videos, and can be easily cropped out. After cropping the aspect ratio would be weird, but it can also be fixed cropping at both sides, creating two "overlayless" images from the original image or with a center crop, creating only one. The only data annotation needed would be two vertical coordinates to crop the overlay out.
+It does not seem too hard to build such dataset, but it's necessary access to an Oil and Gas company video archive. Mostly the overlay are on the top and bottom of the videos, and can be easily cropped out. After cropping the aspect ratio would be weird, but this can be fixed with further cropping. This final may generate a single image (with a center crop, for example) or multiple images (for example: "left and right crops" or "left, center and right crops"), depending on the strategy. The only data annotation needed would be two vertical coordinates to crop out the overlays.
 
 
 ### 6.2. Processing time
