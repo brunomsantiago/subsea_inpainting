@@ -6,6 +6,10 @@
 ---
 
 Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
+
+- [Repositório principal do trabalho](https://github.com/brunomsantiago/subsea_inpainting)
+- [Conjunto de Dados - *Subsea Inpainting Dataset*](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset)
+- [Biblioteca de visualização - viajen](https://github.com/brunomsantiago/viajen)
 ---
 
 ### Resumo
