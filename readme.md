@@ -227,3 +227,9 @@ I am not sure if it is possible to get excellent quality (with temporal consiste
 Regardless of the method, for broad application remove overlays from subsea inspection videos it will be necessary to have a full application.
 
 # 7. Downloads
+
+The links for relevant byproducts of this work are available at relevant sections of the text, however here is a recapitulation.
+ - **viajen visualiation library** - [Github](https://github.com/brunomsantiago/viajen)
+ - **Subsea Inpainting Dataset** - [Kaggle](), [Google Drive](https://drive.google.com/file/d/1OaTLKxkgKlAXMD4PFeHu4YxVVR_nqrkL/view?usp=sharing) (334 MB)
+ - **Subsea Inpainting Results - Static Images** - [Google Drive](https://drive.google.com/file/d/1jUv7pgKGsEN3_L5F_qsxe-QKISmY51p7/view?usp=sharing) (775 MB)
+ - **Subsea Inpainting Results - Animated GIFs** - [Google Drive](https://drive.google.com/file/d/1dmw2F-WMNkEnjuYB3gDUyuYCqq5v1z_M/view?usp=sharing) (1.4 GB)
