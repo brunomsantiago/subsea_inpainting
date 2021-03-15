@@ -208,6 +208,8 @@ Overall the FGVC processing times were very long, between 11 and 16 seconds per 
 
 ### 6.3. Robustness
 
+FGVC didn't work with some frame resolutions and aspect ratio, raising errors and stopping the processing. Clip 02a original video resolution was 1920x1080. I tried resizing it low resolution, keeping the aspect ratio, but it didn't work either. I had to change the aspect ratio, which I did by cropping content from the sides. FGVC was also not able to process longer sequences of frames, running out of memory. A production ready method must be more flexible regarding the input.
+
 ### 6.4 Easy of use
 
 # 7. Downloads
