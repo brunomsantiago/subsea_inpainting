@@ -20,6 +20,7 @@
   + [6.2. Processing time](#62-processing-time)
   + [6.3. Robustness](#63-robustness)
   + [6.4 Easy of use](#64-easy-of-use)
+  + [6.5 Final remarks](#65-final-remarks)
 - [7. Downloads](#7-downloads)
 
 ## 1. Introduction
