@@ -3,7 +3,7 @@
 
 ----
 
-This work is my final assignment to finish the course Business Inteligence Master at PUC University, Rio de Janeiro, Brasil. For more details see [abstract (in Portuguese)](https://github.com/brunomsantiago/subsea_inpainting/blob/main/monografia%2Cpt-BR.md)
+This work is my final assignment to finish the course Business Inteligence Master at PUC University, Rio de Janeiro, Brasil. For more details see [abstract (in Portuguese)](https://github.com/brunomsantiago/subsea_inpainting/blob/main/monografia%2Cpt-BR.md).
 
 ---
 ### Table of Contents
