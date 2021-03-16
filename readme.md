@@ -96,11 +96,11 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 
 The code used to inpaint the clips are available in this folder [notebooks_inpainting](https://github.com/brunomsantiago/subsea_inpainting/tree/main/notebooks_inpainting) of this repository. There are two notebooks for each evaluated method (OpenCV, Deepfill V1, Hifill, FGVC), ready do play in Kaggle, other ready to play on Google Colab. Those platforms are great and have free GPU notebooks, however there are trade-offs and decide to provide code for both of them.
 
-In my experience Google Colab have faster GPU instances, more GPU time in the free tier and easier integration with google drive, which make it more suitable for longer running notebooks and to retrieve results for further analysis. However the initial dataset setup is a little harder. On the other hand, Kaggle already have the dataset ready to use, making it easir to start playing with the data. Kaggle free GPU instances, however, need the users to register themselves and confirming their profiles with a valid cellphone. For people who never used Kaggle or don't intend to use, Colab maybe a better option.
+In my experience Google Colab have faster GPU instances, more GPU time in the free tier and easier integration with google drive, which make it more suitable for longer running notebooks and to retrieve results for further analysis. However the initial dataset setup is a little harder. On the other hand, Kaggle already have the dataset ready to use, making it easier to start playing with the data. Kaggle free GPU instances, however, need the users to register themselves and confirming their profiles with a valid cellphone. For people who never used Kaggle or don't intend to use, Colab maybe a better option.
 
 All these notebooks can be viewed here on github (which sometimes is slow to display notebooks) and on nbviewer (which sometimes gives 404 errors when trying to display from repositories with many notebooks like this one, specially recently updated notebooks). If you want to just preview the code, I suggest trying first the nbviewer version.
 
-
+The notebooks need the models (codes and pre-trained weights) of Deepfill, Hifill and FGVC to work properly. All the models are available on the [models branch](https://github.com/brunomsantiago/subsea_inpainting/tree/models) of this repository, which are automatically cloned by the notebooks.
 
 | Inpainting Method | Kaggle Notebook                    | Colab Notebook |
 |-------------------|------------------------------------|----------------|
