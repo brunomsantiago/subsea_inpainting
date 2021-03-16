@@ -94,9 +94,11 @@ FGVC uses 3 neural networks. One to estimate optical flow (originally FlowNet2, 
 
 ## 4. Testing Code
 
-The code used to inpaint the clips are available in folder [notebooks_inpainting](https://github.com/brunomsantiago/subsea_inpainting/tree/main/notebooks_inpainting) of this repository. There are two notebooks for each evaluated method (OpenCV, Deepfill V1, Hifill, FGVC), ready do play in Kaggle, other ready to play on Google Colab. Those platforms are great and have free GPU notebooks, however there are trade-offs and decide to provide code for both of them.
+The code used to inpaint the clips are available in folder [notebooks_inpainting](https://github.com/brunomsantiago/subsea_inpainting/tree/main/notebooks_inpainting) of this repository. There are two notebooks for each evaluated method (OpenCV, Deepfill V1, Hifill, FGVC), ready do play in Kaggle, other ready to play on Google Colab. Those platforms are great and have free GPU notebooks, however there are trade-offs and decided to provide code for both of them.
 
-In my experience Google Colab have faster GPU instances, more GPU time in the free tier and easier integration with google drive, which make it more suitable for longer running notebooks and to retrieve results for further analysis. However the initial dataset setup is a little harder. On the other hand, Kaggle already have the dataset ready to use, making it easier to start playing with the data. Kaggle free GPU instances, however, need the users to register themselves and confirming their profiles with a valid cellphone. For people who never used Kaggle or don't intend to use, Colab maybe a better option.
+In my experience Google Colab have faster GPU instances, more GPU time in the free tier and easier integration with google drive, which make it more suitable for longer running notebooks and to retrieve results for further analysis. However the initial dataset setup is a little harder.
+
+On the other hand, Kaggle already have the dataset ready to use, making it easier to start playing with the data. Kaggle free GPU instances, however, need the users to register themselves and confirming their profiles with a valid cellphone. For people who never used Kaggle or don't intend to use, Colab maybe a better option.
 
 All these notebooks can be viewed here on github (which sometimes is slow to display notebooks) and on nbviewer (which sometimes gives 404 errors when trying to display from repositories with many notebooks like this one, specially recently updated notebooks). If you want to just preview the code, I suggest trying first the nbviewer version.
 
@@ -189,39 +191,39 @@ The results were evaluated visually and subjectively classified in a four grade 
 
 FGVC is an truly awesome work and sometimes its results are amazing, looking like magic. Unfortunately sometimes the results are not so good. Deepfill and Hifill results were not even close to the quality of FGVC.
 
-I would need to make additional clips to confirm, but it seems to me FGVC has quality issues with longer sequences of frames. Make longer clips of the good results, make smaller clips of the bad ones.
+I would need to make additional clips to confirm, but it seems to me FGVC has quality issues with longer sequences of frames. It could be further investigated by making longer clips of the good results and smaller versions of the bad ones.
 
-All three learning based methods (FGVC, Deepfill, Hifill), but mostly FGVC seems to have issue with some semi-uniform backgrounds, specially with low brightness and high noise. This issues appears on clips 3a, 5a, 5b, 5c, 5d and 5e.
+All three learning based methods (FGVC, Deepfill, Hifill), but mostly FGVC, seems to have issue with some semi-uniform backgrounds, specially with low brightness and high noise. This issues appears on clips 3a, 5a, 5b, 5c, 5d and 5e.
  - I would need to investigate further, but it seems to me FGVC has false positive matching of pixels between frames in such scenario, propagating wrong data. Deepfill, which is used by FGVC to hallucinate completely missing pixels performed much better in these clips, except on clip 3a.
  - The low quality of FGVC results on these clips doesn't seem to be associated with the optical flow. The completed flow seems good.
  - Just for the records, Opencv method has good results in these areas and seemingly only in these areas.
 
 **On the quality aspect none of the methods tested is production ready yet**, at least not for this application. However all three learning based methods could probably improve a lot by training on a large dataset of subsea inspection images without overlay.
 
-It does not seem too hard to build such dataset, but it's necessary access to an Oil and Gas company video archive. Mostly the overlay are on the top and bottom of the videos, and can be easily cropped out. After cropping the aspect ratio would be weird, but this can be fixed with further cropping. This final may generate a single image (with a center crop, for example) or multiple images (for example: "left and right crops" or "left, center and right crops"), depending on the strategy. The only data annotation needed would be two vertical coordinates to crop out the overlays.
+It does not seem too hard to build such dataset, but it's necessary access an Oil and Gas company video archive. In these video the overlay are usually on the top and bottom sections of the frames, and can be easily cropped out. After cropping the aspect ratio would be weird, but this can be fixed with further cropping. This final may generate a single image (with a center crop, for example) or multiple images (for example: "left and right crops" or "left, center and right crops"), depending on the training strategy. The only data annotation needed would be two vertical coordinates to crop out the overlays.
 
 
 ### 6.2. Processing time
 
 The code was executed in Google Colab with free GPU instances, so there is room for improvement with better hardware.
 
-Overall the FGVC processing times were very long, between 11 and 16 seconds per frame. It took as long as 18,4 minutes for a 80 frames long clip. FGVC times were between 46x and 72x slower than Opencv.
+Overall the FGVC processing times were very long, between 11 and 16 seconds per frame. It took as long as 18,4 minutes for a 80 frames long clip. FGVC were between 46x and 72x slower than Opencv.
 
- It was expected that FGVC times would be slower, as it has a complex pipeline and is a quite new method, product of a research project published just few months ago. On the other hand FGVC seems to have a lot of room for optimization.
+ It was expected that FGVC times would be slower, as it has a complex pipeline and is a quite new method, product of a research project published just few months ago. On the other hand FGVC seems to have much room for improvement.
 
  For example, the [FGVC tool code]() seem to compare each frame with all other frames in a sequence, in order to propagate data between them. Probably it is possible to improve its speed without loosing quality focusing the frame propagation to nearby frames.
 
- Another example of optimization, useful for all methods but specially for CPU intensive ones like FGVC is to split long sequences of frames into small clips, maybe with a little overlaping between them. By processing these clips in parallel, with different cores from CPU or GPU, is possible to drop the average processing speed to acceptable levels.
+ Another example of optimization, useful for all methods but specially for FGVC (which is currently CPU bound) is to split long sequences of frames into small clips, maybe with a little overlaping between them. By processing these clips in parallel, with different cores from CPU or GPU, it would be possible to drop the average processing speed to acceptable levels.
 
-  **Without at least a order of magnitude improvement in processing time, FGVC is suitable to remove overlay of subsea inspection videos**, which can be very long. A single operation may have many hours of video data.
+  **Without at least a order of magnitude improvement in processing time, FGVC isn't suitable to remove overlay of subsea inspection videos**, which can be very long. A single operation may have many hours of video data.
 
 ### 6.3. Robustness
 
-FGVC didn't work with some frame resolutions and aspect ratio, raising errors and stopping the processing. Clip 02a original video resolution was 1920x1080. I tried resizing it low resolution, keeping the aspect ratio, but it didn't work either. I had to change the aspect ratio, which I did by cropping content from the sides. FGVC was also not able to process longer sequences of frames, running out of memory. A production ready method must be more flexible regarding the input.
+FGVC didn't work with some frame resolutions and aspect ratio, raising errors and stopping the processing. For example, clip 02a original video resolution was 1920x1080. I tried resizing it to a lower resolution, keeping the aspect ratio, but it didn't work either. I had to change the aspect ratio, which I did by cropping content from the sides. FGVC was also not able to process longer sequences of frames, running out of memory. I also tried to process lower resolution videos, to see if would be possible to test longer sequences of frames, and it also didn't work. A production ready method must be more flexible regarding the input.
 
 ### 6.4 Easy of use
 
-I admire researchers who publish the code and weights, making easier for others to test their methods with their own data. However python scripts and jupyter notebooks are not a production ready solution. A good solution for common users should, at least:
+I admire researchers who publish the code and weights with their papers, making easier for others to test their methods with their own data. However python scripts and jupyter notebooks are not a production ready solution. A good solution for common users should, at least:
  - Have a good graphic interface, desktop or online.
  - Accept video files as inputs
  - Allow the user to draw their own mask on top of the video.
@@ -229,15 +231,15 @@ I admire researchers who publish the code and weights, making easier for others 
 
 ### 6.5 Final remarks
 
-From the four methods tests, overall, the FGVC had the best results. It has potential to evolve into a production ready method, but are not ready yet, both in quality and processing speed. It's worth noting that FGVC was the only video method tested, but there are others like Deep Video Inpainting ([paper](https://arxiv.org/abs/1905.02949), [code](https://github.com/mcahny/Deep-Video-Inpainting), [video](https://youtu.be/RtThGNTvkjY)) and Deep Flow-Guided Video Inpainting ([paper](https://arxiv.org/abs/1905.02884), [code](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting), [video](https://youtu.be/LIJPUsrwx5E)).
+From the four methods tests, overall, the FGVC had the best results. It has potential to evolve into a production ready method, but it is not ready yet, neither in quality nor processing speed. It's worth noting that FGVC was the only video method tested. There are others like Deep Video Inpainting ([paper](https://arxiv.org/abs/1905.02949), [code](https://github.com/mcahny/Deep-Video-Inpainting), [video](https://youtu.be/RtThGNTvkjY)) and Deep Flow-Guided Video Inpainting ([paper](https://arxiv.org/abs/1905.02884), [code](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting), [video](https://youtu.be/LIJPUsrwx5E)).
 
-I am not sure if it is possible to get excellent quality (with temporal consistency) using a frame by frame method like Deepfill and Hifill, however their results seems to have much room for improvement.
+I am not sure it is possible to get excellent quality and temporal consistency by using a frame by frame method, like Deepfill and Hifill. However their results seems to have much room for improvement too.
 
-Regardless of the method, for broad application remove overlays from subsea inspection videos it will be necessary to have a full application.
+Regardless of the method, broad use of overlay removal from subsea inspection videos will only be achieved with a user friendly software.
 
 # 7. Downloads
 
-The links for relevant byproducts of this work are available at relevant sections of the text, however here is a recapitulation.
+The links for relevant steps of this work are available at relevant sections of the text, however here is a recapitulation.
  - **viajen visualiation library** - [Github](https://github.com/brunomsantiago/viajen)
  - **Subsea Inpainting Dataset** - [Kaggle](), [Google Drive](https://drive.google.com/file/d/1OaTLKxkgKlAXMD4PFeHu4YxVVR_nqrkL/view?usp=sharing) (334 MB)
  - **Subsea Inpainting Results - Static Images** - [Google Drive](https://drive.google.com/file/d/1jUv7pgKGsEN3_L5F_qsxe-QKISmY51p7/view?usp=sharing) (775 MB)
