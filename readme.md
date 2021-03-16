@@ -1,6 +1,13 @@
 # Subsea Inpainting
 ### Removing overlays from subsea inspection videos <br><br>
 
+----
+
+This work is my final assignment to finish the course Business Inteligence Master at PUC University, Rio de Janeiro, Brasil. For more details see [abstract (in Portuguese)](https://github.com/brunomsantiago/subsea_inpainting/blob/main/monografia%2Cpt-BR.md)
+
+---
+### Table of Contents
+
 * [1. Introduction](#1-introduction)
 * [2. The Dataset](#2-the-dataset)
 * [3. Inpainting methods tested](#3-inpainting-methods-tested)
@@ -22,6 +29,8 @@
   + [6.4 Easy of use](#64-easy-of-use)
   + [6.5 Final remarks](#65-final-remarks)
 - [7. Downloads](#7-downloads)
+
+---
 
 ## 1. Introduction
 
