@@ -1,6 +1,6 @@
 # Subsea Inpainting - Model Branch
 
-This branch is completely different from the master branch.
+This branch is completely different from the [master branch](https://github.com/brunomsantiago/subsea_inpainting).
 It is used to store independent copies of third-party neural networks models (code and pre-trained weights).
 
 I separated the branches because the main branch has some images animations, making it slow to download. You can clone just this branch (in Colab or Kaggle notebooks, for example) using the following command:
