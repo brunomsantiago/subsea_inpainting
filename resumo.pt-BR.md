@@ -14,6 +14,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 - [Monografia (em inglês, direto no github)](https://github.com/brunomsantiago/subsea_inpainting)
 - [Conjunto de Dados - *Subsea Inpainting Dataset*](https://www.kaggle.com/brunomsantiago/subsea-inpainting-dataset)
 - [Biblioteca de visualização - viajen](https://github.com/brunomsantiago/viajen)
+
 ---
 
 ### Resumo
