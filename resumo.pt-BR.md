@@ -4,7 +4,7 @@
   <img src="https://github.com/brunomsantiago/subsea_inpainting/raw/main/images/01a_04_fgvc_compare.gif">
 </p>  
 
-#### Aluno: [Bruno Santiago](https://github.com/garaujo94/)
+#### Aluno: [Bruno Santiago](https://github.com/brunomsantiago/)
 #### Orientador: [Leonardo Mendoza](https://github.com/leofome8)
 
 ---
